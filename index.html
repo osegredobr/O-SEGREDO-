@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>O Segredo da Persuasão | Ebook Oficial</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+:root {
+    --netflix-red: #E50914;
+    --dark-bg: #141414;
+    --card-bg: #181818;
+    --text-gray: #b3b3b3;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif}
+body{background:#000;color:#fff;overflow-x:hidden}
+
+section{max-width:1100px;margin:auto;padding:80px 20px}
+
+h1{font-size:48px;font-weight:900;line-height:1.1;letter-spacing:-1px}
+h2{font-size:32px;font-weight:800;margin-bottom:25px;border-left:5px solid var(--netflix-red);padding-left:15px}
+p{font-size:18px;line-height:1.6;color:var(--text-gray);margin-bottom:15px}
+
+span.red{color:var(--netflix-red);font-weight:800}
+
+.btn{
+display:block;
+width:100%;
+max-width:400px;
+margin:20px auto;
+text-align:center;
+padding:22px;
+border-radius:4px;
+background:var(--netflix-red);
+color:#fff;
+font-weight:900;
+font-size:20px;
+text-decoration:none;
+text-transform:uppercase;
+transition:.3s;
+box-shadow:0 4px 15px rgba(229,9,20,.4);
+}
+.btn:hover{transform:scale(1.03);background:#ff0f1a}
+
+.logo-box{display:flex;justify-content:center;margin-bottom:40px}
+.logo-box img{width:120px;padding:10px;border-bottom:4px solid var(--netflix-red)}
+
+.video-box{
+position:relative;
+max-width:350px;
+margin:40px auto;
+border:2px solid #333;
+border-radius:8px;
+overflow:hidden;
+background:#000;
+}
+.video-box video{
+width:100%;
+aspect-ratio:9/16;
+object-fit:cover;
+display:block;
+}
+.play-btn{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+padding:15px 30px;
+font-size:16px;
+font-weight:900;
+border:none;
+border-radius:4px;
+background:#fff;
+color:#000;
+cursor:pointer;
+text-transform:uppercase;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+margin-top:40px;
+}
+.grid img{
+width:100%;
+border-radius:4px;
+transition:transform .3s;
+cursor:pointer;
+}
+
+.block{
+background:var(--card-bg);
+border-radius:8px;
+padding:40px 25px;
+margin-top:50px;
+border:1px solid #222;
+}
+
+.price-tag{text-align:center;margin:40px 0}
+.old-price{text-decoration:line-through;color:#777;font-size:20px}
+.new-price{font-size:54px;font-weight:900;color:#fff;display:block;margin-top:-10px}
+
+/* MOBILE */
+@media (max-width:768px){
+section{padding:50px 16px}
+h1{font-size:32px}
+h2{font-size:24px}
+p{font-size:16px}
+.new-price{font-size:40px}
+.old-price{font-size:16px}
+.btn{font-size:17px;padding:18px}
+.video-box{max-width:280px}
+.logo-box img{width:90px}
+}
+</style>
+</head>
+
+<body>
+
+<section>
+<div class="logo-box">
+<img src="logo.png" alt="O Segredo da Persuasão">
+</div>
+
+<h1 data-aos="fade-up">
+Persuasão não é talento.<br>
+<span class="red">É método.</span>
+</h1>
+
+<p data-aos="fade-up" data-aos-delay="200" style="font-size:22px;color:#fff">
+Quem domina persuasão transforma palavras em vendas previsíveis.
+</p>
+
+<div class="video-box" data-aos="zoom-in">
+<video id="meuVideo" src="video.mp4" playsinline></video>
+<button class="play-btn" onclick="playVideo()">▶ Descobrir</button>
+</div>
+
+<div class="price-tag" data-aos="fade-up">
+<span class="old-price">De R$ 29,90</span>
+<span class="new-price">R$ 9,90</span>
+</div>
+
+<!-- Botão CTA principal -->
+<a href="https://pay.kirvano.com/185c154a-ab25-4629-9468-78bf0e7f51ed" class="btn">
+QUERO DOMINAR A PERSUASÃO
+</a>
+</section>
+
+<section class="block">
+<h2>Por que você não vende?</h2>
+<p>Porque as pessoas não compram produtos.</p>
+<p><b>Elas compram decisões.</b></p>
+<p class="red">
+Este ebook mostra como conduzir decisões sem pressão, sem empurrar e sem parecer vendedor.
+</p>
+</section>
+
+<section>
+<h2>O que você vai aprender</h2>
+
+<p style="color:#fff;font-weight:600">
+Persuasão aplicada para vendas, marketing e influência.
+</p>
+
+<p>
+Você vai entender como despertar desejo, eliminar objeções
+e fazer a pessoa sentir que a compra foi ideia dela.
+</p>
+
+<div class="grid">
+  <div><img src="img1.png"></div>
+  <div><img src="img2.png"></div>
+</div>
+</section>
+
+<section class="block">
+<h2>Conteúdo Direto ao Ponto</h2>
+<p>Sem teoria inútil.</p>
+<p>Sem enrolação.</p>
+<p class="red">Apenas o que funciona na prática.</p>
+</section>
+
+<section style="text-align:center;background:radial-gradient(circle,#222 0%,#000 100%);border-radius:10px;padding:60px 20px">
+<h2 style="border:none">Pronto para vender mais?</h2>
+<p>Comece por apenas <b>
+R$ 9,90</b>.</p>
+<!-- Botão CTA final -->
+<a href="https://pay.kirvano.com/185c154a-ab25-4629-9468-78bf0e7f51ed" class="btn">
+DESCOBRIR O SEGREDO
+</a>
+<p style="font-size:14px;margin-top:15px">🔒 Compra segura</p>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({duration:800,once:true});
+function playVideo(){
+const v=document.getElementById('meuVideo');
+v.muted=false;v.play();
+document.querySelector('.play-btn').style.display='none';
+}
+</script>
+
+</body>
+</html>
